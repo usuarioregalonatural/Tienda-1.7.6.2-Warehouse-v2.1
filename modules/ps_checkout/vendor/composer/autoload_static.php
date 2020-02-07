@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0c7c3f3a412d6f306162998d364bb93e
+class ComposerStaticInit1e0abd35677ff8d18b6175784e5ac565
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -118,6 +118,8 @@ class ComposerStaticInit0c7c3f3a412d6f306162998d364bb93e
         'PrestaShop\\Module\\PrestashopCheckout\\Environment\\PaypalEnv' => __DIR__ . '/../..' . '/classes/Environment/PaypalEnv.php',
         'PrestaShop\\Module\\PrestashopCheckout\\Environment\\PsxEnv' => __DIR__ . '/../..' . '/classes/Environment/PsxEnv.php',
         'PrestaShop\\Module\\PrestashopCheckout\\Environment\\SsoEnv' => __DIR__ . '/../..' . '/classes/Environment/SsoEnv.php',
+        'PrestaShop\\Module\\PrestashopCheckout\\ExpressCheckout' => __DIR__ . '/../..' . '/classes/ExpressCheckout.php',
+        'PrestaShop\\Module\\PrestashopCheckout\\Factory\\CheckoutLogger' => __DIR__ . '/../..' . '/classes/Factory/CheckoutLogger.php',
         'PrestaShop\\Module\\PrestashopCheckout\\Faq\\Faq' => __DIR__ . '/../..' . '/classes/Faq/Faq.php',
         'PrestaShop\\Module\\PrestashopCheckout\\FatalException' => __DIR__ . '/../..' . '/classes/exception/fatalException.php',
         'PrestaShop\\Module\\PrestashopCheckout\\Handler\\Response\\ResponseApiHandler' => __DIR__ . '/../..' . '/classes/Handler/Response/ResponseApiHandler.php',
@@ -204,16 +206,17 @@ class ComposerStaticInit0c7c3f3a412d6f306162998d364bb93e
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'ps_checkoutDispatchWebHookModuleFrontController' => __DIR__ . '/../..' . '/controllers/front/DispatchWebHook.php',
+        'ps_checkoutExpressCheckoutModuleFrontController' => __DIR__ . '/../..' . '/controllers/front/ExpressCheckout.php',
         'ps_checkoutValidateOrderModuleFrontController' => __DIR__ . '/../..' . '/controllers/front/ValidateOrder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0c7c3f3a412d6f306162998d364bb93e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0c7c3f3a412d6f306162998d364bb93e::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit0c7c3f3a412d6f306162998d364bb93e::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit0c7c3f3a412d6f306162998d364bb93e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1e0abd35677ff8d18b6175784e5ac565::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1e0abd35677ff8d18b6175784e5ac565::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit1e0abd35677ff8d18b6175784e5ac565::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit1e0abd35677ff8d18b6175784e5ac565::$classMap;
 
         }, null, ClassLoader::class);
     }
