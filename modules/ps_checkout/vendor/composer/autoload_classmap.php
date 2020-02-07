@@ -64,6 +64,8 @@ return array(
     'PrestaShop\\Module\\PrestashopCheckout\\Environment\\PaypalEnv' => $baseDir . '/classes/Environment/PaypalEnv.php',
     'PrestaShop\\Module\\PrestashopCheckout\\Environment\\PsxEnv' => $baseDir . '/classes/Environment/PsxEnv.php',
     'PrestaShop\\Module\\PrestashopCheckout\\Environment\\SsoEnv' => $baseDir . '/classes/Environment/SsoEnv.php',
+    'PrestaShop\\Module\\PrestashopCheckout\\ExpressCheckout' => $baseDir . '/classes/ExpressCheckout.php',
+    'PrestaShop\\Module\\PrestashopCheckout\\Factory\\CheckoutLogger' => $baseDir . '/classes/Factory/CheckoutLogger.php',
     'PrestaShop\\Module\\PrestashopCheckout\\Faq\\Faq' => $baseDir . '/classes/Faq/Faq.php',
     'PrestaShop\\Module\\PrestashopCheckout\\FatalException' => $baseDir . '/classes/exception/fatalException.php',
     'PrestaShop\\Module\\PrestashopCheckout\\Handler\\Response\\ResponseApiHandler' => $baseDir . '/classes/Handler/Response/ResponseApiHandler.php',
@@ -150,5 +152,6 @@ return array(
     'Ramsey\\Uuid\\UuidInterface' => $vendorDir . '/ramsey/uuid/src/UuidInterface.php',
     'Symfony\\Polyfill\\Ctype\\Ctype' => $vendorDir . '/symfony/polyfill-ctype/Ctype.php',
     'ps_checkoutDispatchWebHookModuleFrontController' => $baseDir . '/controllers/front/DispatchWebHook.php',
+    'ps_checkoutExpressCheckoutModuleFrontController' => $baseDir . '/controllers/front/ExpressCheckout.php',
     'ps_checkoutValidateOrderModuleFrontController' => $baseDir . '/controllers/front/ValidateOrder.php',
 );
